@@ -28,7 +28,7 @@
  `brew update`
 
  `brew cask install java`   
- Testing if it is installed run the following in your terminal
+ Testing if java is running in your environment run the following in your terminal
   `javac -version` which should display something like `javac 1.8.0_131`
 
   ### installing Android Studio 
@@ -60,8 +60,21 @@ add the following to your .bash_profile
 ### Running on Mobile Device
   [Click Here](https://facebook.github.io/react-native/docs/running-on-device.html)
 
+# Libraries and Utilities
+### Graph Library
+[Victory Graph Library](https://formidable.com/open-source/victory/guides/brush-and-zoom)
 
-
-
+## Redux 
+* [Redux Module Builder](https://www.fullstackreact.com/articles/better-redux-module-management/) 
+* [Setting Up React Native with Redux](https://medium.com/@jonlebensold/getting-started-with-react-native-redux-2b01408c0053)
  
- 
+## Text Editor
+ ### Visual Studio Code
+ ## Test Framework
+ * [HTTP Test](https://github.com/visionmedia/supertest)
+ * 
+
+ configuration found in the .vscode
+ * [React Native Tools](https://github.com/Microsoft/vscode-react-native)
+# Front End UI Kit
+ [Native Base](https://docs.nativebase.io/docs/CheatSheet.html)
