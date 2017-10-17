@@ -9,7 +9,9 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View, 
+  Button
+
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -19,13 +21,30 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-export default class App extends Component<{}> {
+export default class App extends Component {
+  
+   constructor(props){
+      super(props)
+      this.state ={
+        state1: "Something else", 
+        state2:"Something else two"
+      }
+
+      this.changeState =  this.changeState.bind(this)
+   }
+   changeState(){
+     this.setState(previous => {
+        return {state1:"This just changed"}
+     })
+   }
   render() {
+   
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-            Hallo Pieter
-        </Text>
+        
+      <View >
+            <Button onPress={this.changeState} title="Change State" />
+            <Text>{`${this.state.state1}`}</Text>
+            <Text>{`${this.state.state2}`}</Text>
       </View>
     );
   }
