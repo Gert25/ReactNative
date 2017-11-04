@@ -57,6 +57,8 @@ add the following to your .bash_profile
 
 `export PATH=$PATH:$ANDROID_HOME/platform-tools`
 
+Type source $HOME/.bash_profile to load the config into your current shell.Verify that ANDROID_HOME has been added to your path by running `echo $PATH`
+
 ### Running on Mobile Device
   [Click Here](https://facebook.github.io/react-native/docs/running-on-device.html)
 ### Using Emulator
@@ -65,7 +67,10 @@ Emulators  are useful cause they allow you to target multiple devices on yuor ma
  What version of Emulator to choose?
   It is important to take the android version/platform into account. You need to know which platform is mostly used and target that platform for your development instead of focusing on multiple platforms. This link provides some valid information about those type of metrics [Dashboard](https://developer.android.com/about/dashboards/index.html)
 
-
+## Running the Project
+ root into the application folder. 
+  ### Android
+      react-native run-android
 # Libraries and Utilities
 ### Graph Library
 [Victory Graph Library](https://formidable.com/open-source/victory/guides/brush-and-zoom)
