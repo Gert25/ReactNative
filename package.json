@@ -1,0 +1,23 @@
+{
+  "name": "reactnative",
+  "version": "1.0.0",
+  "description": "react native playground.",
+  "main": "index.js",
+  "dependencies": {
+    "react-native-cli": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gert25/ReactNative.git"
+  },
+  "author": "Gert van Rooyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gert25/ReactNative/issues"
+  },
+  "homepage": "https://github.com/Gert25/ReactNative#readme"
+}
