@@ -59,6 +59,12 @@ add the following to your .bash_profile
 
 ### Running on Mobile Device
   [Click Here](https://facebook.github.io/react-native/docs/running-on-device.html)
+### Using Emulator
+Emulators  are useful cause they allow you to target multiple devices on yuor machine to run and these your application. You can download emulators via Android SDK.
+
+ What version of Emulator to choose?
+  It is important to take the android version/platform into account. You need to know which platform is mostly used and target that platform for your development instead of focusing on multiple platforms. This link provides some valid information about those type of metrics [Dashboard](https://developer.android.com/about/dashboards/index.html)
+
 
 # Libraries and Utilities
 ### Graph Library
