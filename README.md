@@ -71,7 +71,20 @@ Emulators  are useful cause they allow you to target multiple devices on yuor ma
  root into the application folder. 
   ### Android
       react-native run-android
+# Concepts
+## Platform Specific code
+In react native there are two main ways off organizing your code when it comes to targeting platform specific functions:
+* Using the Platform module
+* Using platform-specific file extensions
+
+### using Platform Module
+`Platform.OS`
+
+  When the platform (Operating system) is IOS, the Platform.OS will then be equal to `ios`. When the platform in which the app is running on is android Platform.ios will be equal to `android`
+   
 # Libraries and Utilities
+## Resources
+* [Aweseome React Native](http://www.awesome-react-native.com/)
 ### Graph Library
 [Victory Graph Library](https://formidable.com/open-source/victory/guides/brush-and-zoom)
 

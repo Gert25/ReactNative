@@ -9,7 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View, 
+
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -19,30 +20,27 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-export default class App extends Component<{}> {
+export default class App extends Component{
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+          <Text>This is app is currently running on <Text style={styles.PlatformSpecific}>{Platform.OS}</Text> Operating System</Text>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  PlatformSpecific: {
+     color:"red" 
+  }, 
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    paddingLeft: 20, 
+    paddingRight:20
   },
   welcome: {
     fontSize: 20,
