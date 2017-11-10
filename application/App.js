@@ -20,15 +20,25 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+const platformSpecificStyle  =  Platform.select({
+    ios: 
+   { backgroundColor: '#6b6e7f'}, 
+   android: {
+     backgroundColor: '#09ed59'
+   }
+
+})
+
 export default class App extends Component{
   render() {
     return (
       <View style={styles.container}>
-          <Text>This is app is currently running on <Text style={styles.PlatformSpecific}>{Platform.OS}</Text> Operating System</Text>
+          <Text>Your current platform is  <Text style={styles.PlatformSpecific}>{Platform.OS}</Text> Operating System</Text>
       </View>
     );
   }
 }
+
 
 const styles = StyleSheet.create({
   PlatformSpecific: {
@@ -38,7 +48,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    ...platformSpecificStyle,
     paddingLeft: 20, 
     paddingRight:20
   },

@@ -81,7 +81,34 @@ In react native there are two main ways off organizing your code when it comes t
 `Platform.OS`
 
   When the platform (Operating system) is IOS, the Platform.OS will then be equal to `ios`. When the platform in which the app is running on is android Platform.ios will be equal to `android`
-   
+  
+  `Platform.select`
+   The `Platform.select` allows you to create specific stylesheets for specific Mobile platforms by passing in the `Platfrom.OS` specific key to the the class. See the following example
+    
+   ```  import { Platform, StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    ...Platform.select({
+      ios: {
+        backgroundColor: 'red',
+      },
+      android: {
+        backgroundColor: 'blue',
+      },
+    }),
+  },
+});
+```
+
+'Platform.Version`
+In order to determine the version of the platform you can call the  `Platform.Version`. This will will bring back a string value stating the value.
+
+### using Platform Specific extensions
+React Native can determine which platform to target based on their file extension. For example when a file's extension includes the `.android.` in the file name react native will automatically handel it as android specific code. Likewise, when a file's extension includes `.ios.` in it the file will be used to target ios platform. 
+
+ 
 # Libraries and Utilities
 ## Resources
 * [Aweseome React Native](http://www.awesome-react-native.com/)
