@@ -108,6 +108,9 @@ In order to determine the version of the platform you can call the  `Platform.Ve
 ### using Platform Specific extensions
 React Native can determine which platform to target based on their file extension. For example when a file's extension includes the `.android.` in the file name react native will automatically handel it as android specific code. Likewise, when a file's extension includes `.ios.` in it the file will be used to target ios platform. 
 
+## React Navigation
+  React Navigation provides an easy to use navigation solution, with the ability to present common stack navigation and tabbed navigation patterns on both iOS and Android
+  
  
 # Libraries and Utilities
 ## Resources

@@ -33,7 +33,7 @@ export default class App extends Component{
   render() {
     return (
       <View style={styles.container}>
-          <Text>Your current platform is  <Text style={styles.PlatformSpecific}>{Platform.OS}</Text> Operating System</Text>
+          <Text>Your current platform is <Text style={styles.PlatformSpecific}>{Platform.OS}</Text> Operating System</Text>
       </View>
     );
   }
