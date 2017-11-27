@@ -110,7 +110,10 @@ React Native can determine which platform to target based on their file extensio
 
 ## React Navigation
   React Navigation provides an easy to use navigation solution, with the ability to present common stack navigation and tabbed navigation patterns on both iOS and Android
-  
+
+  `NavigatorIOS`
+    Targets the IOS platform to give a native look and feel with minimal configuration regarding the navigation platform for IOS. It is essentialy a wrapper class around `UINavigationController` 
+
  
 # Libraries and Utilities
 ## Resources
